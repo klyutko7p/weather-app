@@ -1,14 +1,19 @@
-import { createStore } from 'vuex'
+import Vuex, { StoreOptions } from 'vuex'
+import axios from "axios";
+import { RootState } from './types';
+import cities from 'cities.json';
 
-export default createStore({
+const store:StoreOptions<RootState> = {
   state: {
+    cities: [cities],
   },
   getters: {
+ 
   },
   mutations: {
+
   },
   actions: {
   },
-  modules: {
-  }
-})
+}
+export default new Vuex.Store<RootState>(store)
