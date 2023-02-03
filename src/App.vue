@@ -5,12 +5,16 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted } from 'vue';
-import { useStore } from 'vuex';
-const store = useStore();
-
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background: linear-gradient(90deg, #1CBAD4 35%, #1FCDC0 100%);
+}
 </style>
