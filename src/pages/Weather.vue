@@ -41,8 +41,7 @@
             <HourlyList :hourlyArray="hourlyArray" @getHour="getHour"></HourlyList>
             <HourlyDetails v-if="Object.keys(hour).length !== 0" :hour="hour"></HourlyDetails>
         </div>
-        <div v-else>
-            <h1>weather is not ready</h1>
+        <div v-else class="text-center text-6xl">
             <Spinner></Spinner>
         </div>
     </div>
