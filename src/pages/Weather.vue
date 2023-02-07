@@ -35,6 +35,7 @@
                         }}
                         </option>
                     </select>
+                    <MainButton class="mt-2 text-right">Update day</MainButton>
                     <DailyDetails :dailyObject="dailyObject"></DailyDetails>
                 </div>
             </div>
