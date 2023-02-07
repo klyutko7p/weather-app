@@ -28,14 +28,14 @@
                 </div>
                 <div class="xl:w-1/2 lg:w-full">
                     <h1 class="text-2xl font-bold mb-2">Choose the day</h1>
-                    <select name="" id="" v-model="selectedDate" @click="parseTime(), parseDaily()"
+                    <select name="" id="" v-model="selectedDate"
                         class="block w-full px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         <option v-for="date in weather.daily.time" :value="date">{{
                             new Date(date).toLocaleString("en-EN", { month: "long", day: "numeric", })
                         }}
                         </option>
                     </select>
-                    <MainButton class="mt-2 text-right">Update day</MainButton>
+                    <MainButton class="mt-2 text-right"  @click="parseTime(), parseDaily()">Update day</MainButton>
                     <DailyDetails :dailyObject="dailyObject"></DailyDetails>
                 </div>
             </div>
