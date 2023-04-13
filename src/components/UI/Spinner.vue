@@ -1,9 +1,6 @@
 <template>
-    <div>
-        <div class="lds-ripple mt-3">
-            <div></div>
-            <div></div>
-        </div>
+    <div class="flex items-center justify-center">
+        <img src="@/assets/images/sunny-light.svg" alt="">
     </div>
 </template>
 

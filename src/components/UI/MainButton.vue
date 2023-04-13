@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <button class="button-30 sm:text-sm" role="button" ><slot></slot></button>
-    </div>
+    <button class="button-30 sm:text-sm" role="button">
+        <slot></slot>
+    </button>
 </template>
 
 
